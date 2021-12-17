@@ -1,0 +1,132 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"5 ./i2c.h
+[; ;./i2c.h: 5:  void i2cInit(void);
+[v _i2cInit `(v ~T0 @X0 0 ef ]
+"20 ./ds1307.h
+[; ;./ds1307.h: 20:  int dsReadData(int address);
+[v _dsReadData `(i ~T0 @X0 0 ef1`i ]
+"19
+[; ;./ds1307.h: 19:  void dsWriteData(unsigned char value, int address);
+[v _dsWriteData `(v ~T0 @X0 0 ef2`uc`i ]
+"6 ./i2c.h
+[; ;./i2c.h: 6:  unsigned char i2cWriteByte(unsigned char send_start, unsigned char send_stop, unsigned char byte);
+[v _i2cWriteByte `(uc ~T0 @X0 0 ef3`uc`uc`uc ]
+"7
+[; ;./i2c.h: 7:  unsigned char i2cReadByte(unsigned char nack, unsigned char send_stop);
+[v _i2cReadByte `(uc ~T0 @X0 0 ef2`uc`uc ]
+"9 ds1307.c
+[; ;ds1307.c: 9: int dec2bcd(int value) {
+[v _dec2bcd `(i ~T0 @X0 1 ef1`i ]
+{
+[e :U _dec2bcd ]
+[v _value `i ~T0 @X0 1 r1 ]
+[f ]
+"10
+[; ;ds1307.c: 10:  return ((value / 10 * 16) + (value % 10));
+[e ) + * / _value -> 10 `i -> 16 `i % _value -> 10 `i ]
+[e $UE 1  ]
+"11
+[; ;ds1307.c: 11: }
+[e :UE 1 ]
+}
+"12
+[; ;ds1307.c: 12: int bcd2dec(int value) {
+[v _bcd2dec `(i ~T0 @X0 1 ef1`i ]
+{
+[e :U _bcd2dec ]
+[v _value `i ~T0 @X0 1 r1 ]
+[f ]
+"13
+[; ;ds1307.c: 13:  return ((value / 16 * 10) + (value % 16));
+[e ) + * / _value -> 16 `i -> 10 `i % _value -> 16 `i ]
+[e $UE 2  ]
+"14
+[; ;ds1307.c: 14: }
+[e :UE 2 ]
+}
+"15
+[; ;ds1307.c: 15: void dsInit(void) {
+[v _dsInit `(v ~T0 @X0 1 ef ]
+{
+[e :U _dsInit ]
+[f ]
+"16
+[; ;ds1307.c: 16:  i2cInit();
+[e ( _i2cInit ..  ]
+"17
+[; ;ds1307.c: 17: }
+[e :UE 3 ]
+}
+"18
+[; ;ds1307.c: 18: void dsStartClock(void) {
+[v _dsStartClock `(v ~T0 @X0 1 ef ]
+{
+[e :U _dsStartClock ]
+[f ]
+"19
+[; ;ds1307.c: 19:  int seconds;
+[v _seconds `i ~T0 @X0 1 a ]
+"20
+[; ;ds1307.c: 20:  seconds = dsReadData(0);
+[e = _seconds ( _dsReadData (1 -> 0 `i ]
+"21
+[; ;ds1307.c: 21:  dsWriteData(0x7f & seconds,0);
+[e ( _dsWriteData (2 , -> & -> 127 `i _seconds `uc -> 0 `i ]
+"22
+[; ;ds1307.c: 22:  return;
+[e $UE 4  ]
+"23
+[; ;ds1307.c: 23: }
+[e :UE 4 ]
+}
+"24
+[; ;ds1307.c: 24: void dsWriteData(unsigned char value, int address) {
+[v _dsWriteData `(v ~T0 @X0 1 ef2`uc`i ]
+{
+[e :U _dsWriteData ]
+[v _value `uc ~T0 @X0 1 r1 ]
+[v _address `i ~T0 @X0 1 r2 ]
+[f ]
+"25
+[; ;ds1307.c: 25:  i2cWriteByte(1,0, (0x68<<1)|0);
+[e ( _i2cWriteByte (3 , , -> -> 1 `i `uc -> -> 0 `i `uc -> | << -> 104 `i -> 1 `i -> 0 `i `uc ]
+"26
+[; ;ds1307.c: 26:  i2cWriteByte(0,0,address);
+[e ( _i2cWriteByte (3 , , -> -> 0 `i `uc -> -> 0 `i `uc -> _address `uc ]
+"27
+[; ;ds1307.c: 27:  i2cWriteByte(0,1,value);
+[e ( _i2cWriteByte (3 , , -> -> 0 `i `uc -> -> 1 `i `uc _value ]
+"28
+[; ;ds1307.c: 28: }
+[e :UE 5 ]
+}
+"29
+[; ;ds1307.c: 29: int dsReadData(int address) {
+[v _dsReadData `(i ~T0 @X0 1 ef1`i ]
+{
+[e :U _dsReadData ]
+[v _address `i ~T0 @X0 1 r1 ]
+[f ]
+"30
+[; ;ds1307.c: 30:  int result;
+[v _result `i ~T0 @X0 1 a ]
+"31
+[; ;ds1307.c: 31:  i2cWriteByte(1,0,(0x68<<1) | 0);
+[e ( _i2cWriteByte (3 , , -> -> 1 `i `uc -> -> 0 `i `uc -> | << -> 104 `i -> 1 `i -> 0 `i `uc ]
+"32
+[; ;ds1307.c: 32:  i2cWriteByte(0,0,address);
+[e ( _i2cWriteByte (3 , , -> -> 0 `i `uc -> -> 0 `i `uc -> _address `uc ]
+"33
+[; ;ds1307.c: 33:  i2cWriteByte(1,0, (0x68<<1) | 1);
+[e ( _i2cWriteByte (3 , , -> -> 1 `i `uc -> -> 0 `i `uc -> | << -> 104 `i -> 1 `i -> 1 `i `uc ]
+"34
+[; ;ds1307.c: 34:  result = i2cReadByte(1,1 );
+[e = _result -> ( _i2cReadByte (2 , -> -> 1 `i `uc -> -> 1 `i `uc `i ]
+"35
+[; ;ds1307.c: 35:  return result;
+[e ) _result ]
+[e $UE 6  ]
+"36
+[; ;ds1307.c: 36: }
+[e :UE 6 ]
+}

@@ -1,0 +1,700 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4520 ]
+[d frameptr 4065 ]
+"27 E:\melol\Documents\Unifei\ECOP14 - Lab. de Programação Embarcada\PJFinal.X\adc.c
+[e E2357 pin_label `uc
+PIN_A0 0
+PIN_A1 1
+PIN_A2 2
+PIN_A3 3
+PIN_A4 4
+PIN_A5 5
+PIN_A6 6
+PIN_A7 7
+PIN_B0 8
+PIN_B1 9
+PIN_B2 10
+PIN_B3 11
+PIN_B4 12
+PIN_B5 13
+PIN_B6 14
+PIN_B7 15
+PIN_C0 16
+PIN_C1 17
+PIN_C2 18
+PIN_C3 19
+PIN_C4 20
+PIN_C5 21
+PIN_C6 22
+PIN_C7 23
+PIN_D0 24
+PIN_D1 25
+PIN_D2 26
+PIN_D3 27
+PIN_D4 28
+PIN_D5 29
+PIN_D6 30
+PIN_D7 31
+PIN_E0 32
+PIN_E1 33
+PIN_E2 34
+PIN_E3 35
+PIN_E4 36
+PIN_E5 37
+PIN_E6 38
+PIN_E7 39
+]
+"16 E:\melol\Documents\Unifei\ECOP14 - Lab. de Programação Embarcada\PJFinal.X\i2c.c
+[e E10 pin_label `uc
+PIN_A0 0
+PIN_A1 1
+PIN_A2 2
+PIN_A3 3
+PIN_A4 4
+PIN_A5 5
+PIN_A6 6
+PIN_A7 7
+PIN_B0 8
+PIN_B1 9
+PIN_B2 10
+PIN_B3 11
+PIN_B4 12
+PIN_B5 13
+PIN_B6 14
+PIN_B7 15
+PIN_C0 16
+PIN_C1 17
+PIN_C2 18
+PIN_C3 19
+PIN_C4 20
+PIN_C5 21
+PIN_C6 22
+PIN_C7 23
+PIN_D0 24
+PIN_D1 25
+PIN_D2 26
+PIN_D3 27
+PIN_D4 28
+PIN_D5 29
+PIN_D6 30
+PIN_D7 31
+PIN_E0 32
+PIN_E1 33
+PIN_E2 34
+PIN_E3 35
+PIN_E4 36
+PIN_E5 37
+PIN_E6 38
+PIN_E7 39
+]
+"36 E:\melol\Documents\Unifei\ECOP14 - Lab. de Programação Embarcada\PJFinal.X\keypad.c
+[e E9 pin_label `uc
+PIN_A0 0
+PIN_A1 1
+PIN_A2 2
+PIN_A3 3
+PIN_A4 4
+PIN_A5 5
+PIN_A6 6
+PIN_A7 7
+PIN_B0 8
+PIN_B1 9
+PIN_B2 10
+PIN_B3 11
+PIN_B4 12
+PIN_B5 13
+PIN_B6 14
+PIN_B7 15
+PIN_C0 16
+PIN_C1 17
+PIN_C2 18
+PIN_C3 19
+PIN_C4 20
+PIN_C5 21
+PIN_C6 22
+PIN_C7 23
+PIN_D0 24
+PIN_D1 25
+PIN_D2 26
+PIN_D3 27
+PIN_D4 28
+PIN_D5 29
+PIN_D6 30
+PIN_D7 31
+PIN_E0 32
+PIN_E1 33
+PIN_E2 34
+PIN_E3 35
+PIN_E4 36
+PIN_E5 37
+PIN_E6 38
+PIN_E7 39
+]
+"19 E:\melol\Documents\Unifei\ECOP14 - Lab. de Programação Embarcada\PJFinal.X\lcd.c
+[e E5 pin_label `uc
+PIN_A0 0
+PIN_A1 1
+PIN_A2 2
+PIN_A3 3
+PIN_A4 4
+PIN_A5 5
+PIN_A6 6
+PIN_A7 7
+PIN_B0 8
+PIN_B1 9
+PIN_B2 10
+PIN_B3 11
+PIN_B4 12
+PIN_B5 13
+PIN_B6 14
+PIN_B7 15
+PIN_C0 16
+PIN_C1 17
+PIN_C2 18
+PIN_C3 19
+PIN_C4 20
+PIN_C5 21
+PIN_C6 22
+PIN_C7 23
+PIN_D0 24
+PIN_D1 25
+PIN_D2 26
+PIN_D3 27
+PIN_D4 28
+PIN_D5 29
+PIN_D6 30
+PIN_D7 31
+PIN_E0 32
+PIN_E1 33
+PIN_E2 34
+PIN_E3 35
+PIN_E4 36
+PIN_E5 37
+PIN_E6 38
+PIN_E7 39
+]
+"5 E:\melol\Documents\Unifei\ECOP14 - Lab. de Programação Embarcada\PJFinal.X\rgb.c
+[e E2 pin_label `uc
+PIN_A0 0
+PIN_A1 1
+PIN_A2 2
+PIN_A3 3
+PIN_A4 4
+PIN_A5 5
+PIN_A6 6
+PIN_A7 7
+PIN_B0 8
+PIN_B1 9
+PIN_B2 10
+PIN_B3 11
+PIN_B4 12
+PIN_B5 13
+PIN_B6 14
+PIN_B7 15
+PIN_C0 16
+PIN_C1 17
+PIN_C2 18
+PIN_C3 19
+PIN_C4 20
+PIN_C5 21
+PIN_C6 22
+PIN_C7 23
+PIN_D0 24
+PIN_D1 25
+PIN_D2 26
+PIN_D3 27
+PIN_D4 28
+PIN_D5 29
+PIN_D6 30
+PIN_D7 31
+PIN_E0 32
+PIN_E1 33
+PIN_E2 34
+PIN_E3 35
+PIN_E4 36
+PIN_E5 37
+PIN_E6 38
+PIN_E7 39
+]
+"4 E:\melol\Documents\Unifei\ECOP14 - Lab. de Programação Embarcada\PJFinal.X\so.c
+[e E2 pin_label `uc
+PIN_A0 0
+PIN_A1 1
+PIN_A2 2
+PIN_A3 3
+PIN_A4 4
+PIN_A5 5
+PIN_A6 6
+PIN_A7 7
+PIN_B0 8
+PIN_B1 9
+PIN_B2 10
+PIN_B3 11
+PIN_B4 12
+PIN_B5 13
+PIN_B6 14
+PIN_B7 15
+PIN_C0 16
+PIN_C1 17
+PIN_C2 18
+PIN_C3 19
+PIN_C4 20
+PIN_C5 21
+PIN_C6 22
+PIN_C7 23
+PIN_D0 24
+PIN_D1 25
+PIN_D2 26
+PIN_D3 27
+PIN_D4 28
+PIN_D5 29
+PIN_D6 30
+PIN_D7 31
+PIN_E0 32
+PIN_E1 33
+PIN_E2 34
+PIN_E3 35
+PIN_E4 36
+PIN_E5 37
+PIN_E6 38
+PIN_E7 39
+]
+"54 E:\melol\Documents\Unifei\ECOP14 - Lab. de Programação Embarcada\PJFinal.X\ssd.c
+[e E7 pin_label `uc
+PIN_A0 0
+PIN_A1 1
+PIN_A2 2
+PIN_A3 3
+PIN_A4 4
+PIN_A5 5
+PIN_A6 6
+PIN_A7 7
+PIN_B0 8
+PIN_B1 9
+PIN_B2 10
+PIN_B3 11
+PIN_B4 12
+PIN_B5 13
+PIN_B6 14
+PIN_B7 15
+PIN_C0 16
+PIN_C1 17
+PIN_C2 18
+PIN_C3 19
+PIN_C4 20
+PIN_C5 21
+PIN_C6 22
+PIN_C7 23
+PIN_D0 24
+PIN_D1 25
+PIN_D2 26
+PIN_D3 27
+PIN_D4 28
+PIN_D5 29
+PIN_D6 30
+PIN_D7 31
+PIN_E0 32
+PIN_E1 33
+PIN_E2 34
+PIN_E3 35
+PIN_E4 36
+PIN_E5 37
+PIN_E6 38
+PIN_E7 39
+]
+"24 E:\melol\Documents\Unifei\ECOP14 - Lab. de Programação Embarcada\PJFinal.X\ds1307.c
+[v _dsWriteData dsWriteData `(v  1 e 1 0 ]
+"29
+[v _dsReadData dsReadData `(i  1 e 2 0 ]
+"7 E:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"7 E:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"7 E:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"7 E:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"4 E:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 E:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 E:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 E:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 E:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 E:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"7 E:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+"7 E:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"10 E:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 E:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 E:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 E:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 E:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 E:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"14 E:\melol\Documents\Unifei\ECOP14 - Lab. de Programação Embarcada\PJFinal.X\i2c.c
+[v _i2cInit i2cInit `(v  1 e 1 0 ]
+"22
+[v _I2C_delay I2C_delay `(v  1 e 1 0 ]
+"29
+[v _read_SCL read_SCL `(uc  1 e 1 0 ]
+"34
+[v _read_SDA read_SDA `(uc  1 e 1 0 ]
+"39
+[v _clear_SCL clear_SCL `(v  1 e 1 0 ]
+"45
+[v _clear_SDA clear_SDA `(v  1 e 1 0 ]
+"52
+[v _i2c_start i2c_start `(v  1 e 1 0 ]
+"71
+[v _i2c_stop i2c_stop `(v  1 e 1 0 ]
+"84
+[v _i2c_write_bit i2c_write_bit `(v  1 e 1 0 ]
+"100
+[v _i2c_read_bit i2c_read_bit `(uc  1 e 1 0 ]
+"113
+[v _i2cWriteByte i2cWriteByte `(uc  1 e 1 0 ]
+"131
+[v _i2cReadByte i2cReadByte `(uc  1 e 1 0 ]
+"14 E:\melol\Documents\Unifei\ECOP14 - Lab. de Programação Embarcada\PJFinal.X\io.c
+[v _digitalWrite digitalWrite `(v  1 e 1 0 ]
+"39
+[v _digitalRead digitalRead `(i  1 e 2 0 ]
+"54
+[v _pinMode pinMode `(v  1 e 1 0 ]
+"14 E:\melol\Documents\Unifei\ECOP14 - Lab. de Programação Embarcada\PJFinal.X\keypad.c
+[v _kpRead kpRead `(ui  1 e 2 0 ]
+"27
+[v _kpDebounce kpDebounce `(v  1 e 1 0 ]
+"54
+[v _kpInit kpInit `(v  1 e 1 0 ]
+"5 E:\melol\Documents\Unifei\ECOP14 - Lab. de Programação Embarcada\PJFinal.X\lcd.c
+[v _delayMicro delayMicro `(v  1 e 1 0 ]
+"10
+[v _delayMili delayMili `(v  1 e 1 0 ]
+"18
+[v _pulseEnablePin pulseEnablePin `(v  1 e 1 0 ]
+"25
+[v _pushNibble pushNibble `(v  1 e 1 0 ]
+"31
+[v _pushByte pushByte `(v  1 e 1 0 ]
+"40
+[v _lcdCommand lcdCommand `(v  1 e 1 0 ]
+"44
+[v _lcdPosition lcdPosition `(v  1 e 1 0 ]
+"52
+[v _lcdChar lcdChar `(v  1 e 1 0 ]
+"72
+[v _lcdInit lcdInit `(v  1 e 1 0 ]
+"11 E:\melol\Documents\Unifei\ECOP14 - Lab. de Programação Embarcada\PJFinal.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"44 E:\melol\Documents\Unifei\ECOP14 - Lab. de Programação Embarcada\PJFinal.X\pwm.c
+[v _pwmFrequency pwmFrequency `(v  1 e 1 0 ]
+"3 E:\melol\Documents\Unifei\ECOP14 - Lab. de Programação Embarcada\PJFinal.X\rgb.c
+[v _rgbColor rgbColor `(v  1 e 1 0 ]
+"45
+[v _rgbInit rgbInit `(v  1 e 1 0 ]
+"3 E:\melol\Documents\Unifei\ECOP14 - Lab. de Programação Embarcada\PJFinal.X\so.c
+[v _soInit soInit `(v  1 e 1 0 ]
+"9
+[v _PulseEnClock PulseEnClock `(v  1 e 1 0 ]
+"14
+[v _PulseClockData PulseClockData `(v  1 e 1 0 ]
+"18
+[v _soWrite soWrite `(v  1 e 1 0 ]
+"34 E:\melol\Documents\Unifei\ECOP14 - Lab. de Programação Embarcada\PJFinal.X\ssd.c
+[v _ssdDigit ssdDigit `(v  1 e 1 0 ]
+"50
+[v _ssdUpdate ssdUpdate `(v  1 e 1 0 ]
+"94
+[v _ssdInit ssdInit `(v  1 e 1 0 ]
+"52 E:/Program Files/Microchip/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4520.h
+[v _PORTA PORTA `VEuc  1 e 1 @3968 ]
+"271
+[v _PORTB PORTB `VEuc  1 e 1 @3969 ]
+"450
+[v _PORTC PORTC `VEuc  1 e 1 @3970 ]
+"632
+[v _PORTD PORTD `VEuc  1 e 1 @3971 ]
+"774
+[v _PORTE PORTE `VEuc  1 e 1 @3972 ]
+"1477
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+"1699
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"1921
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+"2143
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+"2365
+[v _TRISE TRISE `VEuc  1 e 1 @3990 ]
+"2671
+[v _PIR1 PIR1 `VEuc  1 e 1 @3998 ]
+"3110
+[v _RCSTA RCSTA `VEuc  1 e 1 @4011 ]
+"3320
+[v _TXSTA TXSTA `VEuc  1 e 1 @4012 ]
+"3576
+[v _TXREG TXREG `VEuc  1 e 1 @4013 ]
+"3588
+[v _RCREG RCREG `VEuc  1 e 1 @4014 ]
+"3600
+[v _SPBRG SPBRG `VEuc  1 e 1 @4015 ]
+"3612
+[v _SPBRGH SPBRGH `VEuc  1 e 1 @4016 ]
+"4221
+[v _BAUDCON BAUDCON `VEuc  1 e 1 @4024 ]
+"4401
+[v _CCP2CON CCP2CON `VEuc  1 e 1 @4026 ]
+"4487
+[v _CCPR2L CCPR2L `VEuc  1 e 1 @4027 ]
+"4619
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @4032 ]
+"4690
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
+"4775
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @4034 ]
+"4901
+[v _ADRESL ADRESL `VEuc  1 e 1 @4035 ]
+"4908
+[v _ADRESH ADRESH `VEuc  1 e 1 @4036 ]
+"5315
+[v _T2CON T2CON `VEuc  1 e 1 @4042 ]
+"5413
+[v _PR2 PR2 `VEuc  1 e 1 @4043 ]
+"6168
+[v _T0CON T0CON `VEuc  1 e 1 @4053 ]
+"6258
+[v _TMR0L TMR0L `VEuc  1 e 1 @4054 ]
+"6265
+[v _TMR0H TMR0H `VEuc  1 e 1 @4055 ]
+"6692
+[v _INTCON INTCON `VEuc  1 e 1 @4082 ]
+"51 E:\melol\Documents\Unifei\ECOP14 - Lab. de Programação Embarcada\PJFinal.X\i2c.c
+[v _started started `uc  1 e 1 0 ]
+"6 E:\melol\Documents\Unifei\ECOP14 - Lab. de Programação Embarcada\PJFinal.X\keypad.c
+[v _keys keys `ui  1 s 2 keys ]
+"28 E:\melol\Documents\Unifei\ECOP14 - Lab. de Programação Embarcada\PJFinal.X\ssd.c
+[v _valor valor `C[16]uc  1 s 16 valor ]
+"30
+[v _display display `uc  1 s 1 display ]
+"32
+[v _v0 v0 `uc  1 s 1 v0 ]
+[v _v1 v1 `uc  1 s 1 v1 ]
+[v _v2 v2 `uc  1 s 1 v2 ]
+[v _v3 v3 `uc  1 s 1 v3 ]
+"11 E:\melol\Documents\Unifei\ECOP14 - Lab. de Programação Embarcada\PJFinal.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"12
+[v main@cont cont `ul  1 a 4 56 ]
+[v main@cont2 cont2 `ul  1 a 4 52 ]
+[v main@n n `ul  1 a 4 46 ]
+[v main@nled nled `ul  1 a 4 41 ]
+[v main@i i `ul  1 a 4 37 ]
+"13
+[v main@tecla tecla `ui  1 a 2 50 ]
+"14
+[v main@parado parado `uc  1 a 1 45 ]
+[v main@op op `uc  1 a 1 36 ]
+"123
+} 0
+"50 E:\melol\Documents\Unifei\ECOP14 - Lab. de Programação Embarcada\PJFinal.X\ssd.c
+[v _ssdUpdate ssdUpdate `(v  1 e 1 0 ]
+{
+"92
+} 0
+"94
+[v _ssdInit ssdInit `(v  1 e 1 0 ]
+{
+"104
+} 0
+"34
+[v _ssdDigit ssdDigit `(v  1 e 1 0 ]
+{
+[v ssdDigit@val val `uc  1 a 1 wreg ]
+[v ssdDigit@val val `uc  1 a 1 wreg ]
+[v ssdDigit@pos pos `uc  1 p 1 22 ]
+[v ssdDigit@val val `uc  1 a 1 23 ]
+"48
+} 0
+"45 E:\melol\Documents\Unifei\ECOP14 - Lab. de Programação Embarcada\PJFinal.X\rgb.c
+[v _rgbInit rgbInit `(v  1 e 1 0 ]
+{
+"49
+} 0
+"3
+[v _rgbColor rgbColor `(v  1 e 1 0 ]
+{
+[v rgbColor@led led `i  1 p 2 6 ]
+"19
+} 0
+"44 E:\melol\Documents\Unifei\ECOP14 - Lab. de Programação Embarcada\PJFinal.X\lcd.c
+[v _lcdPosition lcdPosition `(v  1 e 1 0 ]
+{
+[v lcdPosition@line line `i  1 p 2 14 ]
+[v lcdPosition@col col `i  1 p 2 16 ]
+"51
+} 0
+"72
+[v _lcdInit lcdInit `(v  1 e 1 0 ]
+{
+"91
+} 0
+"25
+[v _pushNibble pushNibble `(v  1 e 1 0 ]
+{
+[v pushNibble@value value `uc  1 a 1 wreg ]
+[v pushNibble@value value `uc  1 a 1 wreg ]
+[v pushNibble@rs rs `i  1 p 2 9 ]
+[v pushNibble@value value `uc  1 a 1 11 ]
+"29
+} 0
+"40
+[v _lcdCommand lcdCommand `(v  1 e 1 0 ]
+{
+[v lcdCommand@value value `uc  1 a 1 wreg ]
+[v lcdCommand@value value `uc  1 a 1 wreg ]
+[v lcdCommand@value value `uc  1 a 1 13 ]
+"43
+} 0
+"10
+[v _delayMili delayMili `(v  1 e 1 0 ]
+{
+"11
+[v delayMili@i i `VEi  1 a 2 3 ]
+"10
+[v delayMili@a a `i  1 p 2 0 ]
+"16
+} 0
+"52
+[v _lcdChar lcdChar `(v  1 e 1 0 ]
+{
+[v lcdChar@value value `uc  1 a 1 wreg ]
+[v lcdChar@value value `uc  1 a 1 wreg ]
+[v lcdChar@value value `uc  1 a 1 13 ]
+"55
+} 0
+"31
+[v _pushByte pushByte `(v  1 e 1 0 ]
+{
+[v pushByte@value value `uc  1 a 1 wreg ]
+[v pushByte@value value `uc  1 a 1 wreg ]
+[v pushByte@rs rs `i  1 p 2 9 ]
+[v pushByte@value value `uc  1 a 1 12 ]
+"39
+} 0
+"18
+[v _pulseEnablePin pulseEnablePin `(v  1 e 1 0 ]
+{
+"23
+} 0
+"5
+[v _delayMicro delayMicro `(v  1 e 1 0 ]
+{
+[v delayMicro@a a `i  1 p 2 0 ]
+"9
+} 0
+"14 E:\melol\Documents\Unifei\ECOP14 - Lab. de Programação Embarcada\PJFinal.X\keypad.c
+[v _kpRead kpRead `(ui  1 e 2 0 ]
+{
+"16
+} 0
+"54
+[v _kpInit kpInit `(v  1 e 1 0 ]
+{
+"59
+} 0
+"3 E:\melol\Documents\Unifei\ECOP14 - Lab. de Programação Embarcada\PJFinal.X\so.c
+[v _soInit soInit `(v  1 e 1 0 ]
+{
+"7
+} 0
+"54 E:\melol\Documents\Unifei\ECOP14 - Lab. de Programação Embarcada\PJFinal.X\io.c
+[v _pinMode pinMode `(v  1 e 1 0 ]
+{
+[v pinMode@pin pin `i  1 p 2 0 ]
+[v pinMode@type type `i  1 p 2 2 ]
+"73
+} 0
+"27 E:\melol\Documents\Unifei\ECOP14 - Lab. de Programação Embarcada\PJFinal.X\keypad.c
+[v _kpDebounce kpDebounce `(v  1 e 1 0 ]
+{
+"28
+[v kpDebounce@i i `i  1 a 2 12 ]
+"29
+[v kpDebounce@tempo tempo `uc  1 s 1 tempo ]
+"30
+[v kpDebounce@newRead newRead `ui  1 s 2 newRead ]
+"31
+[v kpDebounce@oldRead oldRead `ui  1 s 2 oldRead ]
+"52
+} 0
+"18 E:\melol\Documents\Unifei\ECOP14 - Lab. de Programação Embarcada\PJFinal.X\so.c
+[v _soWrite soWrite `(v  1 e 1 0 ]
+{
+"19
+[v soWrite@i i `uc  1 a 1 8 ]
+"18
+[v soWrite@value value `i  1 p 2 6 ]
+"27
+} 0
+"9
+[v _PulseEnClock PulseEnClock `(v  1 e 1 0 ]
+{
+"12
+} 0
+"14
+[v _PulseClockData PulseClockData `(v  1 e 1 0 ]
+{
+"17
+} 0
+"14 E:\melol\Documents\Unifei\ECOP14 - Lab. de Programação Embarcada\PJFinal.X\io.c
+[v _digitalWrite digitalWrite `(v  1 e 1 0 ]
+{
+[v digitalWrite@pin pin `i  1 p 2 0 ]
+[v digitalWrite@value value `i  1 p 2 2 ]
+"38
+} 0
+"39
+[v _digitalRead digitalRead `(i  1 e 2 0 ]
+{
+[v digitalRead@pin pin `i  1 p 2 0 ]
+"52
+} 0
+"7 E:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+{
+"10
+[v ___llmod@counter counter `uc  1 a 1 21 ]
+"7
+[v ___llmod@dividend dividend `ul  1 p 4 13 ]
+[v ___llmod@divisor divisor `ul  1 p 4 17 ]
+"25
+} 0
+"7 E:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+{
+"10
+[v ___lldiv@quotient quotient `ul  1 a 4 8 ]
+"11
+[v ___lldiv@counter counter `uc  1 a 1 12 ]
+"7
+[v ___lldiv@dividend dividend `ul  1 p 4 0 ]
+[v ___lldiv@divisor divisor `ul  1 p 4 4 ]
+"30
+} 0
